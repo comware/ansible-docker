@@ -17,7 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: check if a tag has not been specified
-        if: !startsWith(github.ref, 'refs/tags/')
         run: |
           echo "::set-env name=TAG::latest"
       - name: check if a tag has been specified
