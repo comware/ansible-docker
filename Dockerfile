@@ -1,4 +1,4 @@
-FROM lexauw/ansible-alpine:v2.8.4
+FROM lexauw/ansible-alpine:v2.9.2
 
 RUN apk update \
     && apk add --no-cache bash make
